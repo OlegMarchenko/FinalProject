@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <!-- HEADER -->
+    <a href="#" class="show-menu">show menu</a>
+
+    <div class="container">
+        <a class="logo" href="#"><img src="images/logo-header.png" alt="Bis Lite"></a>
+
+        <div class="main-menu">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class="dropdown-menu">
+                    <a class="arrow" href="#">Services</a>
+                    <ul>
+                        <li class="drop-list"><a href="#">Web Design</a></li>
+                        <li class="drop-list"><a href="#">Wordpress Design</a></li>
+                        <li class="drop-list"><a href="#">Mobile App Devplopment</a></li>
+                        <li class="drop-list"><a href="#">Internet Marketing</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-menu">
+                    <a class="arrow" href="portfolio.html">Portfolio</a>
+                    <ul>
+                        <li class="drop-list"><a href="#">Web Design</a></li>
+                        <li class="drop-list"><a href="#">Wordpress Design</a></li>
+                        <li class="drop-list"><a href="#">Mobile App Devplopment</a></li>
+                        <li class="drop-list"><a href="#">Internet Marketing</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- END HEADER-->
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+    <div class="title-contacts">
+        <h2>contact us</h2>
+    </div>
+    <div class="left-block-info">
+        <div class="contact-info">
+            <p>Thank you for stopping by. Please use the form below to contact us and will get back to you at the
+                earliest possible</p>
+
+            <p>For feedback or questions, please email us at: <a href="#">email@bislite.com</a></p>
+        </div>
+        <form action="#">
+            <fieldset>
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Name">
+
+                <label for="emailadress">Email Adress</label>
+                <input type="text" id="emailadress" name="emailadress" placeholder="Your Email">
+
+                <label for="sub">Subject</label>
+                <input type="text" id="sub" name="subject" placeholder="Subject">
+
+                <label for="txtarea">Description</label>
+                <textarea name="description" id="txtarea""
+                          placeholder="Write about yourself"></textarea>
+                <div class="btn-dl2">
+                    <button>
+                        <img src="images/arrowinbtn.png" alt="#">
+                        submit
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="right-block-info">
+        <div class="location">
+            <h4>We are here</h4>
+
+            <div id="map" style="width: 290px; height: 190px; position: relative; overflow: hidden;"></div>
+            <script>
+                function initMap() {
+                    var uluru = {lat: 49.9932608, lng: 36.2392172};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 10,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlo-wuhal1ywzGhrFSjhM2BoBl8_0PRJ4&callback=initMap">
+            </script>
+        </div>
+        <h3>Office Address</h3>
+        <h5>BisLite Inc.</h5>
+        <address>
+            Always Street 265
+            0X - 125 - Canada
+        </address>
+        <p>Phone: 987-6543-210</p>
+
+        <p>Fax: 987-6543-210</p>
+    </div>
+</div>
+
+
+<!-- END MAIN CONTENT -->
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-about-us">
+            <h3>About us</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt.
+                Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros. Ut nec lorem
+                id orci convallis porta. Donec pharetra neque eu velit dictum molestie. </p>
+        </div>
+        <div class="explore">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="browse">
+            <h3>Browse</h3>
+            <ul>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Press & Media</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h3>contact us</h3>
+            <h5>BisLite Inc.</h5>
+            <address>
+                Always Street 265
+                0X - 125 - Canada
+            </address>
+            <p>Phone: 987-6543-210</p>
+
+            <p>Fax: 987-6543-210</p>
+        </div>
+        <div class="connect">
+            <h3>connect with us</h3>
+            <ul>
+                <li><a class="fb" href="#">facebook</a></li>
+                <li><a class="db" href="#">dribble</a></li>
+                <li><a class="pn" href="#">pinterest</a></li>
+                <li><a class="li" href="#">linkedin</a></li>
+                <li><a class="sk" href="#">skype</a></li>
+                <li><a class="sh" href="#">share</a></li>
+            </ul>
+        </div>
+        <div class="footer-logo">
+            <div class="copyright">
+                <p>&copy; Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are
+                    created
+                    by
+                    <a href="#"> Brankic1979.com.</a>
+                    Client Logos are copyright and trademark of the respective owners / companies. </p>
+            </div>
+            <a href="#" class="f-logo"><img src="images/logo-header.png" alt="Bis Lite"></a>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/showmenu.js"></script>
+
+</body>
+</html>
